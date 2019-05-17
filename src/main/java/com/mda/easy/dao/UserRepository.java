@@ -12,4 +12,6 @@ public interface UserRepository extends JpaRepository<User, Integer> {
 
     @Query("select distinct u from User u join fetch u.authorities")
     List<User> findAllWithAuthorities();
+
+    User findByEmail(String email);
 }

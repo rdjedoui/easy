@@ -10,7 +10,7 @@
 
     <appender name="rollingFileAppender" class="ch.qos.logback.core.rolling.RollingFileAppender">
 
-        <File>~/logs/logback.log</File>
+        <File>/home/adaoud/project/easy/logs/logback.log</File>
 
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>~/logs/log_%d{dd-MM-yyyy}_%i.log</fileNamePattern>

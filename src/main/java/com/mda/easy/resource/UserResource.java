@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
+//@RequestMapping("/users")
 public class UserResource {
 
     private static final Logger logger = LoggerFactory.getLogger(UserResource.class);

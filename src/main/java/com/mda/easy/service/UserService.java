@@ -1,6 +1,7 @@
 package com.mda.easy.service;
 
 import com.mda.easy.dto.UserDTO;
+import com.mda.easy.exception.UserNotFoundException;
 import com.mda.easy.model.User;
 
 import java.util.List;
@@ -18,4 +19,6 @@ public interface UserService {
     public void deleteUser(final Integer id);
 
     public void deleteAllUser();
+
+    public User getUser(final String email) throws UserNotFoundException;
 }
